@@ -41,3 +41,6 @@ The Pubchem fingerprints that 881 features. The goal for the machine learning ta
 
 ## Model Comparison
 Using LazyRegressor, we are testing different regression models as classifier (clf). From the results of the initial test, it seems there is overfitting going on. In further work I would use LGBM Regressor and some hyperparameter tuning.
+
+
+Thank you to the Data Professor Chanin Nantesanemat!
