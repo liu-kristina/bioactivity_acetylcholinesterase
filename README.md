@@ -36,11 +36,11 @@ We are cleaning the chemical structure of the SMILES notation, such as removing 
 
 ## Model Building
 
-The Pubchem fingerprints that 881 features. The goal for the machine learning task is the see which functional groups or fingerprints are potent for designing a drug. The pIC50 is the label, the fingerprints are the features. A random forest model is used as the initial model.
+The Pubchem fingerprints that 881 features. The goal for the machine learning task is the see which functional groups or fingerprints are potent for designing a drug. The pIC50 is the label, the fingerprints are the features. We do feature selection and drop low variability features. A random forest model is used as the initial model. We also use Tree SHAP to interpret the importance of the features. We improve the R2 by random hyperparameter tuning.
 <br>
 
 ## Model Comparison
-Using LazyRegressor, we are testing different regression models as classifier (clf). From the results of the initial test, it seems there is overfitting going on. In further work I would use LGBM Regressor and some hyperparameter tuning.
+Using LazyRegressor, we are testing different regression models as classifier (clf). From the results of the initial test, it seems random forest is a decent choice giving low error with a relatively low amount of inference time. To improve the model, I would maybe make adjustments to feature engineering and do Bayesian hyperparameter tuning. 
 
 
 Thank you to the Data Professor Chanin Nantesanemat!
