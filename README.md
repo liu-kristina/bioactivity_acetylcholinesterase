@@ -36,7 +36,7 @@ I am cleaning the chemical structure of the SMILES notation, such as removing sa
 
 ## Model Building
 
-The Pubchem fingerprints that 881 features. The goal for the machine learning task is the see which functional groups or fingerprints are potent for designing a drug. The pIC50 is the label, the fingerprints are the features. I do feature selection and drop low variability features. A random forest model is used as the initial model. I also use Tree SHAP to interpret the importance of the features. We improve the R2 by random hyperparameter tuning.
+The Pubchem fingerprints that 881 features. The goal for the machine learning task is the see which functional groups or fingerprints are potent for designing a drug. The pIC50 is the label, the fingerprints are the features. I do feature selection and drop low variability features. A random forest model is used as the initial model. I also use Tree SHAP to interpret the importance of the features. I improve the R2 by random hyperparameter tuning.
 <br>
 
 ## Model Comparison
